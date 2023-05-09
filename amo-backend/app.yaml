@@ -1,0 +1,7 @@
+runtime: python310
+entrypoint: gunicorn -b app.wsgi 0.0.0.0:8000
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: 'app.settings.prod'
+  PORT: '8000'
+  APPENGINE_URL: 'https://amo-backend-gabriel3105.rj.r.appspot.com/'

@@ -4,7 +4,9 @@ Exercise 1: I understood it as an ETL and I thought that Pandas would be very he
 
 Exercise 2: To display the data (the airports and its status) I used a Antd table component. There's also the required feature of filtering for active or inactive airport (the button to open a component to do that is located on the column itself) and deactivating a airport informing the reason why. Lastly, there is a airport's timeline where we can see the whole history of that airport, such as the times it was activated or deactivated, the reasons/explanations and even the user who did that. The backend code for this exercise can be found in amo-backend/amo/views/views.py and the frontend code in amo-frontend/src/pages/index.
 
-Exercise 3: The required API was developed following the instructions and the data was treated using dicts, a native resource of Python, a very flexible one, which helped with all the manipulations that we need to do with the informations. The backend code for this exercise can be found on amo-backend/amo/views/mock_airlines.py.
+Exercise 3: The required API was developed following the instructions and the data was treated using dicts, a native resource of Python, a very flexible one, which helped with all the manipulations that we need to do with the informations. The backend code for this exercise can be found on amo-backend/amo/views/mock_airlines.py. An example of the API endpoint, that can be used by Curl command or on Postman:
+
+http://localhost:8000/api/amo/mock-airlines/?origin=BHZ&destination=FOR&departure_date=2023-05-12&return_date=2023-05-19
 
 # Backend (how to set it up and technologies)
 

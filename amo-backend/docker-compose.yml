@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+    api:
+      image: amo-backend
+      entrypoint: gunicorn --timeout 360 app.wsgi -b 0.0.0.0:8000
+      ports:
+        - "8000:8000"
